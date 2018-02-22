@@ -13,51 +13,96 @@
 
 <body>
 <div id="wrapper">
-    <!-- Navigation -->
+    <nav id="sidebar" style="background: #4f5b69" class="active col-md-1">
+        <div class="sidebar-header">
+            <strong><h4>LT</h4></strong>
+        </div>
+        <hr  width="100%" size="10px"/>
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#">
+                    <i class="fa fa-dashboard fa-3x"></i>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <i class="fa fa-users fa-3x"></i>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <i class="fa fa-cogs fa-3x"></i>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <i class="fa fa-briefcase fa-3x"></i>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <i class="fa fa-link fa-3x"></i>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <i class="fa fa-paperclip fa-3x"></i>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <i class="fa fa-send fa-3x"></i>
+                </a>
+            </li >
+            <li class="active">
+                <a href="#">
+                    <i class="fa fa-mortar-board fa-3x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+        <!-- Navigation -->
     <nav class="navbar navbar-default">
         <!-- /.navbar-header -->
-        <div class="navbar-header col-md-12">
+        <div class="navbar-header col-md-11">
             <ul class="nav navbar-top-links navbar-left col-md-9">
                 <li>
                     <a href="#">
-                        <i class="fa fa-user fa-2x"></i>
+                        <i class="fa fa-user fa-2x" style="color: black"></i>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-calendar fa-2x"></i>
+                        <i class="fa fa-calendar fa-2x" style="color: black"></i>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-star fa-2x"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h5>Shortcut menu</h5>
+                        <i class="fa fa-star fa-2x star"></i>
                     </a>
                 </li>
             </ul>
 
             <ul class="nav navbar-top-links navbar-left col-md-3 pull-right">
                 <li>
-                    <a href="#">
+                    <a href="#" style="color: black">
                         <i class="fa fa-user fa-2x"></i> HaoNM <i class="fa fa-caret-down"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" style="color: black">
                         <i class="fa fa-search fa-2x"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" style="color: black">
                         <img src="../image/flagEN.png" width="30px" height="20px"> &nbsp;EN
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" style="color: black">
                         <i class="fa fa-bars fa-2x"></i>
                     </a>
                 </li>
@@ -68,19 +113,141 @@
     <div id="page-wrapper" style="min-height: 444px;">
         <div class="row">
             <div class="col-lg-10">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h2 class="page-header">Xin chào, HaoNM!</h2>
-                        <div class="pull-right">
+                <div class="col-md-12 panel" style="color: white;background: dodgerblue">
+                    <h2 class="col-md-4 text-left"> Xin chào, HaoNM!</h2>
+                    <span class="col-md-7 text-right" style="margin-top: 30px">
+                        <i>Chia sẻ trong ngày</i>
+                        <div><b>LÊ ĐÌNH SƠN</b></div>
+                        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.....</div>
+                    </span>
+                    <h6 class="col-md-1 text-right">
+                        <img src="../image/flagEN.png" alt="" height="120px" width="100px">
+                    </h6>
+                </div>
+
+                <div class="row col-md-5">
+                    <div class="col-md-6">
+                        <div class="thumbnail" style="background: #b9bbbe">
+                            <p>Hôm nay <i class="fa fa-caret-down"></i>
+                                <span class="pull-right"><i class="fa fa-ellipsis-v"></i></span>
+                            </p>
+                            <p>
+                                <h1 style="color: deepskyblue; text-align: center">25</h1>
+                            </p>
+                            <p style="text-align: center">đang làm</p>
+                            <hr>
+                            <p>Hoàn thiện: 8</p>
+                        </div>
+
+                        <div class="thumbnail" style="background: #b9bbbe">
+                            <p>Vấn đề phát sinh <i class="fa fa-caret-down"></i>
+                                <span class="pull-right"><i class="fa fa-ellipsis-v"></i></span>
+                            </p>
+                            <p>
+                            <h1 style="color: #c69500; text-align: center">12</h1>
+                            </p>
+                            <p style="text-align: center">vấn đề</p>
+                            <hr>
+                            <p>Đã đóng: 5</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="thumbnail" style="background: #b9bbbe">
+                            <p>Lỡ hẹn <i class="fa fa-caret-down"></i>
+                                <span class="pull-right"><i class="fa fa-ellipsis-v"></i></span>
+                            </p>
+                            <p>
+                            <h1 style="color: red; text-align: center">3</h1>
+                            </p>
+                            <p style="text-align: center">task</p>
+                            <hr>
+                            <p>Hôm qua: 2</p>
+                        </div>
+
+                        <div class="thumbnail" style="background: #b9bbbe">
+                            <p>To do <i class="fa fa-caret-down"></i>
+                                <span class="pull-right"><i class="fa fa-ellipsis-v"></i></span>
+                            </p>
+                            <p>
+                            <h1 style="color: #0c5460; text-align: center">18</h1>
+                            </p>
+                            <p style="text-align: center">đề xuất</p>
+                            <hr>
+                            <p>Đã thực thi: 3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <strong>LỊCH LÀM VIỆC</strong>
+                            <span class="pull-right">Hôm nay <i class="fa fa-caret-down"></i></span>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="col-md-1">
+                                    00
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="col-md-12">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                                        <p>
+                                            <span class="pull-left text-muted small col-md-4"> <em><i class="fa fa-calendar"></i>13:30-14:30</em></span>
+                                            <span class="col-md-4"><a href="#">osaka</a></span>
+                                            <span class="pull-right text-muted small col-md-4"><em><i class="fa fa-user"></i> HaoNM</em></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <span class="pull-right"><i class="fa fa-ellipsis-v"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="col-md-1">
+                                    00
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="col-md-12">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                                        <p>
+                                            <span class="pull-left text-muted small col-md-4"> <em><i class="fa fa-calendar"></i>13:30-14:30</em></span>
+                                            <span class="col-md-4"><a href="#">osaka</a></span>
+                                            <span class="pull-right text-muted small col-md-4"><em><i class="fa fa-user"></i> HaoNM</em></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <span class="pull-right"><i class="fa fa-ellipsis-v"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="col-md-1">
+                                    00
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="col-md-12">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                                        <p>
+                                            <span class="pull-left text-muted small col-md-4"> <em><i class="fa fa-calendar"></i>13:30-14:30</em></span>
+                                            <span class="col-md-4"><a href="#">osaka</a></span>
+                                            <span class="pull-right text-muted small col-md-4"><em><i class="fa fa-user"></i> HaoNM</em></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <span class="pull-right"><i class="fa fa-ellipsis-v"></i></span>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
-                    <!-- /.panel-heading -->
                 </div>
-                <!-- /.panel -->
-                <div class="panel panel-default">
-
-            </div>
             </div>
             <!-- /.col-lg-8 -->
             <div class="col-lg-2">
@@ -89,10 +256,15 @@
                         <div class="list-group">
 
                             <a href="#" class="list-group-item">
-                                Thứ 3, 13:30:21
-                                    THÁNG 2
-                                    18
-                                    2018
+                                <div>
+                                    <i>Thứ ba, 13:30:21</i>
+                                </div>
+                                <div style="text-align: center">
+                                    <span><strong>THÁNG 2</strong></span>
+                                    <h1>18</h1>
+                                    <h5>2018</h5>
+                                </div>
+
                             </a>
 
                             <a href="#" class="list-group-item">
