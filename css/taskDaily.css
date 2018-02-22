@@ -181,9 +181,29 @@ i.star{
     text-align: left;
 }
 
-hr{
-    margin-top: 0;
-    margin-bottom: 0;
+ul.abc{
+    list-style: none;
+    border-left: 2px solid #2e2e2e;
+    padding-left: 40px;
+}
+
+ul.abc li {
+    margin-bottom: 20px;
+    position: relative;
+}
+ul.abc li::before {
+    display: block;
+    content:'';
+    width: 15px;
+    height: 15px;
+    background: blue;
+    border-radius: 50%;
+    position:absolute;
+    top: 2px;
+    left: -48.5px;
+}
+ul.abc li.past::before{
+    background: #e3e3e3;
 }
 
 #sidebar.active ul li a {
