@@ -1,152 +1,12 @@
-.nav-side-menu {
-    overflow: auto;
-    font-family: verdana;
-    font-size: 12px;
-    font-weight: 200;
-    background-color: #2e353d;
-    position: fixed;
-    top: 0px;
-    width: 300px;
-    height: 100%;
-    color: #e1ffff;
-}
-.nav-side-menu .brand {
-    background-color: #23282e;
-    line-height: 50px;
-    display: block;
-    text-align: center;
-    font-size: 14px;
-}
-.nav-side-menu .toggle-btn {
-    display: none;
-}
-.nav-side-menu ul,
-.nav-side-menu li {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    line-height: 35px;
-    cursor: pointer;
-    /*
-      .collapsed{
-         .arrow:before{
-                   font-family: FontAwesome;
-                   content: "\f053";
-                   display: inline-block;
-                   padding-left:10px;
-                   padding-right: 10px;
-                   vertical-align: middle;
-                   float:right;
-              }
-       }
-  */
-}
-.nav-side-menu ul :not(collapsed) .arrow:before,
-.nav-side-menu li :not(collapsed) .arrow:before {
-    font-family: FontAwesome;
-    content: "\f078";
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-    vertical-align: middle;
-    float: right;
-}
-.nav-side-menu ul .active,
-.nav-side-menu li .active {
-    border-left: 3px solid #d19b3d;
-    background-color: #4f5b69;
-}
-.nav-side-menu ul .sub-menu li.active,
-.nav-side-menu li .sub-menu li.active {
-    color: #d19b3d;
-}
-.nav-side-menu ul .sub-menu li.active a,
-.nav-side-menu li .sub-menu li.active a {
-    color: #d19b3d;
-}
-.nav-side-menu ul .sub-menu li,
-.nav-side-menu li .sub-menu li {
-    background-color: #181c20;
-    border: none;
-    line-height: 28px;
-    border-bottom: 1px solid #23282e;
-    margin-left: 0px;
-}
-.nav-side-menu ul .sub-menu li:hover,
-.nav-side-menu li .sub-menu li:hover {
-    background-color: #020203;
-}
-.nav-side-menu ul .sub-menu li:before,
-.nav-side-menu li .sub-menu li:before {
-    font-family: FontAwesome;
-    content: "\f105";
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-    vertical-align: middle;
-}
-.nav-side-menu li {
-    padding-left: 0px;
-    border-left: 3px solid #2e353d;
-    border-bottom: 1px solid #23282e;
-}
-.nav-side-menu li a {
-    text-decoration: none;
-    color: #e1ffff;
-}
-.nav-side-menu li a i {
-    padding-left: 10px;
-    width: 20px;
-    padding-right: 20px;
-}
-.nav-side-menu li:hover {
-    border-left: 3px solid #d19b3d;
-    background-color: #4f5b69;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-}
-@media (max-width: 767px) {
-    .nav-side-menu {
-        position: relative;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .nav-side-menu .toggle-btn {
-        display: block;
-        cursor: pointer;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        z-index: 10 !important;
-        padding: 3px;
-        background-color: #ffffff;
-        color: #000;
-        width: 40px;
-        text-align: center;
-    }
-    .brand {
-        text-align: left !important;
-        font-size: 22px;
-        padding-left: 20px;
-        line-height: 50px !important;
-    }
-}
-@media (min-width: 767px) {
-    .nav-side-menu .menu-list .menu-content {
-        display: block;
-    }
-}
-body {
-    margin: 0px;
-    padding: 0px;
-}
-
-
 /*------------------*/
+.navbar-top-link-header{
+    border-right: 2px solid;
+    width:auto
+}
 
+li.active{
+    border-bottom: 2px solid;
+}
 
 #sidebar.active {
     min-width: 80px;
@@ -166,7 +26,6 @@ i.star{
     color: #c69500;
 }
 
-/* Toggling the sidebar header content, hide the big heading [h3] and showing the small heading [strong] and vice versa*/
 #sidebar .sidebar-header strong {
     display: none;
 }
@@ -181,17 +40,29 @@ i.star{
     text-align: left;
 }
 
-ul.abc{
+nav.navbar.navbar-default{
+    background: #FFFFFF;
+}
+
+.thumbnail.calendar{
+    background: #EEEEEE;
+}
+
+.panel.list-word{
+    background: #EEEEEE;
+}
+
+ul.list-work{
     list-style: none;
     border-left: 2px solid #2e2e2e;
     padding-left: 40px;
 }
 
-ul.abc li {
+ul.list-work li {
     margin-bottom: 20px;
     position: relative;
 }
-ul.abc li::before {
+ul.list-work li::before {
     display: block;
     content:'';
     width: 15px;
@@ -202,8 +73,36 @@ ul.abc li::before {
     top: 2px;
     left: -48.5px;
 }
-ul.abc li.past::before{
-    background: #e3e3e3;
+
+/*ul.list-word li::after{*/
+    /*content: :D";*/
+    /*color: red;*/
+    /*position:absolute;*/
+/*}*/
+
+ul.list-work li.past::before{
+    background: #6c757d;
+}
+
+p.calendar-num{
+    text-align: center;
+    font-size:600%;
+}
+
+p.calendar-num.todo{
+    color: #0c5460;
+}
+
+p.calendar-num.miss{
+    color: red;
+}
+
+p.calendar-num.problem{
+    color: #c69500
+}
+
+p.calendar-num.today{
+    color: deepskyblue;
 }
 
 #sidebar.active ul li a {
@@ -219,81 +118,14 @@ ul.abc li.past::before{
     margin-bottom: 5px;
 }
 
-/* Same dropdown links padding*/
 #sidebar.active ul ul a {
     padding: 10px !important;
 }
 
-/* Changing the arrow position to bottom center position,
-   translateX(50%) works with right: 50%
-   to accurately  center the arrow */
+
 #sidebar.active a[aria-expanded="false"]::before, #sidebar.active a[aria-expanded="true"]::before {
     top: auto;
     bottom: 5px;
     right: 50%;
     transform: translateX(50%);
-}
-
-
-
-
-/*--------------*/
-@media (max-width: 768px) {
-    /* 80px and its content aligned to centre. Pushing it off the screen with the
-       negative left margin
-    */
-    #sidebar.active {
-        min-width: 80px;
-        max-width: 80px;
-        text-align: center;
-        margin-left: -80px !important;
-    }
-
-
-    /* Reappearing the sidebar on toggle button click */
-    #sidebar {
-        margin-left: 0;
-    }
-
-
-    /* Toggling the sidebar header content,
-       hide the big heading [h3] and showing the small heading [strong] and vice versa
-    */
-    #sidebar .sidebar-header strong {
-        display: none;
-    }
-    #sidebar.active .sidebar-header h3 {
-        display: none;
-    }
-    #sidebar.active .sidebar-header strong {
-        display: block;
-    }
-
-    /* Downsize the navigation links font size */
-    #sidebar.active ul li a {
-        padding: 20px 10px;
-        font-size: 0.85em;
-    }
-
-    #sidebar.active ul li a i {
-        margin-right:  0;
-        display: block;
-        font-size: 1.8em;
-        margin-bottom: 5px;
-    }
-
-    /* Adjust the dropdown links padding*/
-    #sidebar.active ul ul a {
-        padding: 10px !important;
-    }
-
-    /* Changing the arrow position to bottom center position,
-      translateX(50%) works with right: 50%
-      to accurately  center the arrow */
-    #sidebar.active a[aria-expanded="false"]::before, #sidebar.active a[aria-expanded="true"]::before {
-        top: auto;
-        bottom: 5px;
-        right: 50%;
-        transform: translateX(50%);
-    }
 }

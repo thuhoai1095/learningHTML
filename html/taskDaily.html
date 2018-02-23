@@ -13,9 +13,10 @@
 
 <body>
 <div id="wrapper">
+    <!--sidebar-->
     <nav id="sidebar" style="background: #4f5b69" class="active col-md-1">
         <div class="sidebar-header">
-            <strong><h4>LT</h4></strong>
+            <strong style="font-size:200%">LT</strong>
         </div>
         <hr  width="100%" size="10px"/>
 
@@ -62,14 +63,14 @@
             </li>
         </ul>
     </nav>
+    <!--/sidebar-->
 
-        <!-- Navigation -->
+        <!-- Navigation header -->
     <nav class="navbar navbar-default">
-        <!-- /.navbar-header -->
-        <div class="navbar-header col-md-11">
+        <div class="navbar-header col-md-12">
             <ul class="nav navbar-top-links navbar-left col-md-9">
                 <li>
-                    <a href="#">
+                    <a href="#" >
                         <i class="fa fa-user fa-2x" style="color: black"></i>
                     </a>
                 </li>
@@ -78,30 +79,30 @@
                         <i class="fa fa-calendar fa-2x" style="color: black"></i>
                     </a>
                 </li>
-                <li>
+                <li >
                     <a href="#">
                         <i class="fa fa-star fa-2x star"></i>
                     </a>
                 </li>
             </ul>
 
-            <ul class="nav navbar-top-links navbar-left col-md-3 pull-right">
-                <li>
+            <ul class="nav navbar-top-links navbar-left col-md-3 pull-right" style="width: auto">
+                <li class="navbar-top-link-header">
                     <a href="#" style="color: black">
                         <i class="fa fa-user fa-2x"></i> HaoNM <i class="fa fa-caret-down"></i>
                     </a>
                 </li>
-                <li>
+                <li class="navbar-top-link-header">
                     <a href="#" style="color: black">
                         <i class="fa fa-search fa-2x"></i>
                     </a>
                 </li>
-                <li>
+                <li class="navbar-top-link-header">
                     <a href="#" style="color: black">
                         <img src="../image/flagEN.png" width="30px" height="20px"> &nbsp;EN
                     </a>
                 </li>
-                <li>
+                <li >
                     <a href="#" style="color: black">
                         <i class="fa fa-bars fa-2x"></i>
                     </a>
@@ -109,11 +110,13 @@
             </ul>
         </div>
     </nav>
+    <!-- /Navigation header -->
+
 
     <div id="page-wrapper" style="min-height: 444px;">
         <div class="row">
-            <div class="col-lg-10">
-                <div class="col-md-12 panel" style="color: white;background: dodgerblue">
+            <div class="col-md-10">
+                <div class="col-md-12 panel" style="color: white;background: #1F93C7">
                     <h2 class="col-md-4 text-left"> Xin chào, HaoNM!</h2>
                     <span class="col-md-7 text-right" style="margin-top: 30px">
                         <i>Chia sẻ trong ngày</i>
@@ -127,25 +130,21 @@
 
                 <div class="row col-md-5">
                     <div class="col-md-6">
-                        <div class="thumbnail" style="background: #b9bbbe">
+                        <div class="thumbnail calendar">
                             <p>Hôm nay <i class="fa fa-caret-down"></i>
                                 <span class="pull-right"><i class="fa fa-ellipsis-v"></i></span>
                             </p>
-                            <p>
-                                <h1 style="color: deepskyblue; text-align: center">25</h1>
-                            </p>
+                                <p class="calendar-num today">25</p>
                             <p style="text-align: center">đang làm</p>
                             <hr>
                             <p>Hoàn thiện: 8</p>
                         </div>
 
-                        <div class="thumbnail" style="background: #b9bbbe">
+                        <div class="thumbnail calendar">
                             <p>Vấn đề phát sinh <i class="fa fa-caret-down"></i>
                                 <span class="pull-right"><i class="fa fa-ellipsis-v"></i></span>
                             </p>
-                            <p>
-                            <h1 style="color: #c69500; text-align: center">12</h1>
-                            </p>
+                            <p class="calendar-num problem">12</p>
                             <p style="text-align: center">vấn đề</p>
                             <hr>
                             <p>Đã đóng: 5</p>
@@ -153,40 +152,35 @@
 
                     </div>
                     <div class="col-md-6">
-                        <div class="thumbnail" style="background: #b9bbbe">
+                        <div class="thumbnail calendar">
                             <p>Lỡ hẹn <i class="fa fa-caret-down"></i>
                                 <span class="pull-right"><i class="fa fa-ellipsis-v"></i></span>
                             </p>
-                            <p>
-                            <h1 style="color: red; text-align: center">3</h1>
-                            </p>
+                            <p class="calendar-num miss">3</p>
                             <p style="text-align: center">task</p>
                             <hr>
                             <p>Hôm qua: 2</p>
                         </div>
 
-                        <div class="thumbnail" style="background: #b9bbbe">
+                        <div class="thumbnail calendar">
                             <p>To do <i class="fa fa-caret-down"></i>
                                 <span class="pull-right"><i class="fa fa-ellipsis-v"></i></span>
                             </p>
-                            <p>
-                            <h1 style="color: #0c5460; text-align: center">18</h1>
-                            </p>
+                            <p class="calendar-num todo">18</p>
                             <p style="text-align: center">đề xuất</p>
-                            <hr>
+                            <hr style="color: #CCCCCC; size: 10px; width: 100%"/>
                             <p>Đã thực thi: 3</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-7">
-                    <div class="panel panel-default">
-
+                    <div class="panel list-word">
                         <div class="panel-heading">
                             <strong>LỊCH LÀM VIỆC</strong>
                             <span class="pull-right">Hôm nay <i class="fa fa-caret-down"></i></span>
                         </div>
                         <div class="panel-body">
-                            <ul class="abc">
+                            <ul class="list-work">
                                 <li class="past">
                                     <div class="row">
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -242,66 +236,61 @@
                 </div>
             </div>
             <!-- /.col-lg-8 -->
-            <div class="col-lg-2">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="list-group">
+            <div class="col-md-2">
+                <div class="group-item">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            <div>
+                                <i>Thứ ba, 13:30:21</i>
+                            </div>
+                            <div style="text-align: center">
+                                <span><strong>THÁNG 2</strong></span>
+                                <h1>18</h1>
+                                <h5>2018</h5>
+                            </div>
+                        </a>
 
-                            <a href="#" class="list-group-item">
-                                <div>
-                                    <i>Thứ ba, 13:30:21</i>
-                                </div>
-                                <div style="text-align: center">
-                                    <span><strong>THÁNG 2</strong></span>
-                                    <h1>18</h1>
-                                    <h5>2018</h5>
-                                </div>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-bullhorn fa-fw"></i> Thông báo hệ thống <br>
+                            Team swat họp plan và retro <br>
+                            <span class="pull-left text-muted small"><em> <i class="fa fa-calendar">
+                            </i>13:30-14:30</em></span>
+                            <span class="pull-right text-muted small"><em><i class="fa fa-user"></i> HaoNM</em></span>
+                        </a>
 
-                            </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-bullhorn fa-fw"></i> Thông báo hệ thống <br>
+                            Team swat họp plan và retro <br>
+                            <span class="pull-left text-muted small"><em> <i class="fa fa-calendar">
+                            </i>13:30-14:30</em></span>
+                            <span class="pull-right text-muted small"><em><i class="fa fa-user"></i> HaoNM</em></span>
+                        </a>
 
-                            <a href="#" class="list-group-item">
-                                <i class="fa fa-bullhorn fa-fw"></i> Thông báo hệ thống
-                                Team swat họp plan và retro
-                                <span class="pull-left text-muted small"><em> <i class="fa fa-calendar">
-                                </i>13:30-14:30</em></span>
-                                <span class="pull-right text-muted small"><em><i class="fa fa-user"></i> HaoNM</em></span>
-                            </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-bullhorn fa-fw"></i> Thông báo hệ thống <br>
+                            Team swat họp plan và retro <br>
+                            <span class="pull-left text-muted small"><em> <i class="fa fa-calendar">
+                            </i>13:30-14:30</em></span>
+                            <span class="pull-right text-muted small"><em><i class="fa fa-user"></i> HaoNM</em></span>
+                        </a>
 
-                            <a href="#" class="list-group-item">
-                                <i class="fa fa-bullhorn fa-fw"></i> Thông báo hệ thống
-                                Team swat họp plan và retro
-                                <span class="pull-left text-muted small"><em> <i class="fa fa-calendar">
-                                </i>13:30-14:30</em></span>
-                                <span class="pull-right text-muted small"><em><i class="fa fa-user"></i> HaoNM</em></span>
-                            </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-bullhorn fa-fw"></i> Thông báo hệ thống <br>
+                            Team swat họp plan và retro <br>
+                            <span class="pull-left text-muted small"><em> <i class="fa fa-calendar">
+                            </i>13:30-14:30</em></span>
+                            <span class="pull-right text-muted small"><em><i class="fa fa-user"></i> HaoNM</em></span>
+                        </a>
 
-                            <a href="#" class="list-group-item">
-                                <i class="fa fa-bullhorn fa-fw"></i> Thông báo hệ thống
-                                Team swat họp plan và retro
-                                <span class="pull-left text-muted small"><em> <i class="fa fa-calendar">
-                                </i>13:30-14:30</em></span>
-                                <span class="pull-right text-muted small"><em><i class="fa fa-user"></i> HaoNM</em></span>
-                            </a>
-
-                            <a href="#" class="list-group-item">
-                                <i class="fa fa-bullhorn fa-fw"></i> Thông báo hệ thống
-                                Team swat họp plan và retro
-                                <span class="pull-left text-muted small"><em> <i class="fa fa-calendar">
-                                </i>13:30-14:30</em></span>
-                                <span class="pull-right text-muted small"><em><i class="fa fa-user"></i> HaoNM</em></span>
-                            </a>
-
-                            <a href="#" class="list-group-item">
-                                <i class="fa fa-bullhorn fa-fw"></i> Thông báo hệ thống
-                                Team swat họp plan và retro
-                                <span class="pull-left text-muted small"><em> <i class="fa fa-calendar">
-                                </i>13:30-14:30</em></span>
-                                <span class="pull-right text-muted small"><em><i class="fa fa-user"></i> HaoNM</em></span>
-                            </a>
-                        </div>
-                        <!-- /.list-group -->
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-bullhorn fa-fw"></i> Thông báo hệ thống <br>
+                            Team swat họp plan và retro <br>
+                            <span class="pull-left text-muted small"><em> <i class="fa fa-calendar">
+                            </i>13:30-14:30</em></span>
+                            <span class="pull-right text-muted small"><em><i class="fa fa-user"></i> HaoNM</em></span>
+                        </a>
                     </div>
-                    <!-- /.panel-body -->
+                    <!-- /.list-group -->
                 </div>
                 <!-- /.panel -->
             </div>
