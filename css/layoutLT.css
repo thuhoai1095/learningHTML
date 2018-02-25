@@ -1,0 +1,21 @@
+.navbar-header{
+    font-size: 200%;
+}
+
+li.active{
+    border-bottom: 2px solid;
+}
+
+#navbar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+
+li.active a i{
+    color: white;
+}
+
+.navbar-header strong{
+    color: white;
+}

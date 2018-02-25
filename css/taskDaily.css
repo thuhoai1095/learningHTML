@@ -1,4 +1,32 @@
 /*------------------*/
+#sidebar{
+    background: #4f5b69;
+}
+
+.sidebar-header{
+    font-size:200%;
+}
+
+.topbar-left{
+    color: black;
+}
+
+.topbar-right{
+    color: black;
+}
+
+.panel.content-header{
+    color: white;
+    background: #1F93C7;
+}
+
+.notice{
+    margin-top: 4%;
+}
+
+.nav.navbar-top-links{
+    width: auto;
+}
 .navbar-top-link-header{
     border-right: 2px solid;
     width:auto
