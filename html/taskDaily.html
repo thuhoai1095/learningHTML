@@ -14,8 +14,7 @@
 <body>
 <div id="wrapper">
     <!--sidebar-->
-    <nav id="sidebar" class="active col-md-1">
-        <div class="row">
+    <nav id="sidebar" class="active">
             <div class="sidebar-header">
                 <strong>LT</strong>
             </div>
@@ -63,55 +62,68 @@
                     </a>
                 </li>
             </ul>
-        </div>
     </nav>
     <!--/sidebar-->
 
         <!-- Navigation header -->
-    <div class="content">
+    <div class="content col-md-11 col-md-offset-1">
         <nav class="navbar navbar-default">
-            <div class="navbar-header col-md-12">
-                <ul class="nav navbar-top-links navbar-left col-md-6">
-                    <li>
-                        <a href="#" class="topbar-left" >
-                            <i class="fa fa-user fa-2x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="topbar-left">
-                            <i class="fa fa-calendar fa-2x"></i>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="#">
-                            <i class="fa fa-star fa-2x star"></i>
-                        </a>
-                    </li>
-                </ul>
-
-                <ul class="nav navbar-top-links navbar-left col-md-6 pull-right">
-                    <li class="navbar-top-link-header">
-                        <a href="#"  class="topbar-right">
-                            <i class="fa fa-user fa-2x"></i> HaoNM <i class="fa fa-caret-down"></i>
-                        </a>
-                    </li>
-                    <li class="navbar-top-link-header">
-                        <a href="#" class="topbar-right">
-                            <i class="fa fa-search fa-2x"></i>
-                        </a>
-                    </li>
-                    <li class="navbar-top-link-header">
-                        <a href="#" class="topbar-right">
-                            <img src="../image/flagEN.png" width="30px" height="20px"> &nbsp;EN
-                        </a>
-                    </li>
-                    <li >
-                        <a href="#" class="topbar-right">
-                            <i class="fa fa-bars fa-2x"></i>
-                        </a>
-                    </li>
-                </ul>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
             </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="navbar-header col-md-12">
+                    <ul class="nav navbar-top-links navbar-left col-md-3">
+                        <li>
+                            <a href="#" class="topbar-left" >
+                                <i class="fa fa-user fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="topbar-left">
+                                <i class="fa fa-calendar fa-2x"></i>
+                            </a>
+                        </li>
+                        <li >
+                            <a href="#">
+                                <i class="fa fa-star fa-2x star"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-top-links navbar-left col-md-9 pull-right">
+                        <li class="navbar-top-link-header">
+                            <a href="#"  class="topbar-right">
+                                <i class="fa fa-user fa-2x"></i> HaoNM <i class="fa fa-caret-down"></i>
+                            </a>
+                        </li>
+                        <li class="navbar-top-link-header">
+                            <a href="#" class="topbar-right">
+                                <i class="fa fa-search fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="navbar-top-link-header">
+                            <a href="#" class="topbar-right">
+                                <img src="../image/flagEN.png" width="30px" height="20px"> &nbsp;EN
+                            </a>
+                        </li>
+                        <li >
+                            <a href="#" class="topbar-right">
+                                <i class="fa fa-bars fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- /.navbar-collapse -->
         </nav>
 
         <div id="page-wrapper">
@@ -184,25 +196,25 @@
                                 <ul class="list-work">
                                     <li class="past">
                                         <div class="row">
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                            <p class="part-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                         </div>
 
                                         <div class="row">
-                                            <span class="pull-left text-muted small col-md-4"> <em><i class="fa fa-calendar"></i>13:30-14:30</em></span>
+                                            <span class="pull-left text-muted small col-md-4 part-paragraph"> <em><i class="fa fa-calendar"></i><span class="part-paragraph"> 13:30-14:30</span></em></span>
                                             <span class="col-md-4"><a href="#">osaka</a></span>
-                                            <span class="pull-right text-muted small col-md-4"><em><i class="fa fa-user"></i> HaoNM</em></span>
+                                            <span class="pull-right text-muted small col-md-4"><em><i class="fa fa-user"></i><span class="part-paragraph"> HaoNM</span></em></span>
                                         </div>
                                     </li>
 
                                     <li class="past">
                                         <div class="row">
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                            <p class="part-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                         </div>
 
                                         <div class="row">
-                                            <span class="pull-left text-muted small col-md-4"> <em><i class="fa fa-calendar"></i>13:30-14:30</em></span>
+                                            <span class="pull-left text-muted small col-md-4 part-paragraph"> <em><i class="fa fa-calendar"></i><span class="part-paragraph"> 13:30-14:30</span></em></span>
                                             <span class="col-md-4"><a href="#">osaka</a></span>
-                                            <span class="pull-right text-muted small col-md-4"><em><i class="fa fa-user"></i> HaoNM</em></span>
+                                            <span class="pull-right text-muted small col-md-4"><em><i class="fa fa-user"></i><span class="part-paragraph"> HaoNM</span></em></span>
                                         </div>
                                     </li>
 
@@ -299,16 +311,18 @@
             </div>
             <!-- /.row -->
         </div>
+        <footer class="row">
+            @2017 - NAL Daily. Giao diện thiết kế bởi  &nbsp;<a href="mailto:hoaittt@nal.vn"> Hoaittt</a>
+        </footer>
     </div>
 
     <!-- /Navigation header -->
     <!-- /#page-wrapper -->
-
 </div>
 <!-- /#wrapper -->
 
 <!-- jQuery -->
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="../js/bootstrap.bundle.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 </body>
